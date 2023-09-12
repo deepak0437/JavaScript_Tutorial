@@ -1,5 +1,6 @@
 // git config --global user.name "your-username"
 // git config --global user.email "your-email@example.com"
+// git branch -d branch_name.
 
 // for printing any line we use console.log 
 // we can use double or single quotes or backticks
