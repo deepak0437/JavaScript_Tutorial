@@ -39,6 +39,7 @@ console.log("Num2 : ", num2)  //it will return 9
 // it's not changing the original value but creating another copy in memory
 
 // reference data types (array)
+let array3 = [1,2,3,4,5,6]
 let array1 = [1,2,3,4,5,6]
 let array2 = array1
 console.log('Array1: ', array1);    
@@ -53,6 +54,8 @@ let arrayNew1 = [1,2,3,4,5,6,7];
 let arrayNew2 = arrayNew1.slice(0);  //first method by using slicing 
 let arrayNew3 = [].concat(arrayNew1); //second method by using concat function
 let arrayNew4 = [...arrayNew1];      //third method by spread perator to copy array into other variable
+let neArrays = [..."ABCDEF"];
+let neArrays1 = [..."ABCDEF", ...array1, ...array3];
 arrayNew1.push(9)
 console.log(arrayNew1 === arrayNew2) 
 console.log(arrayNew1 === arrayNew3) 
