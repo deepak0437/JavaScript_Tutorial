@@ -1,6 +1,8 @@
 console.log("Intro of Objects")
 // object is reference type
 // how to create object
+const objectName = new Object();
+
 const person = {
     name:"Deepak",
     "age":22,
@@ -84,3 +86,7 @@ for(let user of personsArray){
 const [user1, user2] = personsArray
 const [{name}, {age}] = personsArray
 console.log("User Name:", age)
+
+// remove a property from an object
+delete newKeyValue['key12']
+

@@ -114,3 +114,10 @@ console.log(myVal1, myVal2)
 let [val1, val2, ...val3] = myVar
 console.log(val3) //creating new array from existing array
 
+
+// insert an item at a specific index into an array
+myVar.splice(4, 0, "Place");
+// In the splice() method,
+// The first argument specifies the index where you want to insert an item.
+// The second argument (here 0) specifies the number of items to remove.
+// The third argument specifies the element that you want to add to an array.
