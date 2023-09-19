@@ -149,3 +149,14 @@ console.log(fillArray)
 const mynewArray1 = [2,4,6,8,5,9,6,8,1]
 mynewArray1.splice(5,0,"new item") // it will add Moto at position seven and remove one item from that position
 console.log("Splice: ",mynewArray1)
+
+// .map() and .forEach()
+// .map() and .forEach() are both array methods that allow you to loop through an array, but they differ in what they return.
+// .map() returns a new array with the same length as the original array, where each element is the result of applying a callback function to the original element.
+// .forEach() does not return anything, but it simply executes a callback function on each element of the array.
+// ----------------------
+
+// .filter() and .find()
+// Answer: Both .filter() and .find() are array methods that allow you to search for elements in an array that meet certain criteria.
+// .filter() returns a new array with all elements that pass a certain test provided by a callback function.
+// .find() returns the value of the first element in the array that passes a certain test provided by a callback function.
