@@ -160,3 +160,8 @@ console.log("Splice: ",mynewArray1)
 // Answer: Both .filter() and .find() are array methods that allow you to search for elements in an array that meet certain criteria.
 // .filter() returns a new array with all elements that pass a certain test provided by a callback function.
 // .find() returns the value of the first element in the array that passes a certain test provided by a callback function.
+// ----------------------
+
+// .every() and .some()
+// The Array.every() method is used to check whether all the elements of the array satisfy the given condition or not.
+// The Array.some() method is used to check whether at least one of the elements of the array satisfies the given condition or not.
