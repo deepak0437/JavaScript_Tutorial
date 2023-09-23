@@ -315,7 +315,30 @@
 // console.log('numbersArray: ', numbersArray(array));
 
 
+// function outer(){
+//     function inner(){
+//         console.log("Hello World")
+//     }
+//     return inner
+// }
+// const answer = outer()
+// console.log(answer())
 
 
-
-
+// function myFunc(){
+//     let counter = 0
+//     return function(){
+//         if (counter < 1){
+//             console.log("Hiiyou called me");
+//             counter ++;
+//         }
+//         else{
+//             console.log("Already called");
+//         } 
+//     }
+// }
+// const callFunc = myFunc()
+// callFunc()
+// callFunc()
+// callFunc()
+// callFunc()
