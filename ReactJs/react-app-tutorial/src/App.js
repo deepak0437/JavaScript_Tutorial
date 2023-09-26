@@ -11,6 +11,14 @@ import StateTutorialClass from './components/Statetutorial';
 import Countertutorial from './components/CounterSetState';
 import DestrFunComp from './components/DestrPropState';
 import DestrClassComp from './components/DestrPropState';
+import EventHandlingFunction from './components/EventHandling';
+import EventHandlingClass from './components/EventHandling';
+import EventBindingClass from './components/EventBinding';
+import ParentComponent from './components/ParentComponent';
+import GreetingUserClass from './components/GreetingUser';
+import NameList2 from './components/ListRendering';
+import ChildListRendering from './components/ChildListRender';
+
 
 // class App extends Component{
 //   render ()
@@ -51,6 +59,16 @@ function App() {
 
       {/* <DestrFunComp name = "Deepak" heroName = "BatMan"></DestrFunComp>
       <DestrClassComp name = "Deepak" heroName = "BatMan"></DestrClassComp> */}
+
+      {/* <EventHandlingFunction></EventHandlingFunction>
+      <EventHandlingClass></EventHandlingClass> */}
+
+      {/* <EventBindingClass></EventBindingClass> */}
+      {/* <ParentComponent></ParentComponent> */}
+      {/* <GreetingUserClass></GreetingUserClass> */}
+
+      <NameList2></NameList2>
+      {/* <ChildListRendering></ChildListRendering> */}
 
     </div>
   );

@@ -52,3 +52,12 @@
 // which is the second arguments to the setState method.
 // When you have to update state based on the previous state value, pass in a function as an argumnets
 // instead of the regular opbjects .
+
+// event handling
+// In order to handle events such as click, doubleclick etc., add an event listener using the syntax below :
+// Example: this.handleClick = () => {console.log('clicked')}
+
+
+// rfce for functional component
+// rce for class component
+// rconst for creating constructor
