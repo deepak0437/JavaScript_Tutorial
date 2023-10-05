@@ -1,0 +1,77 @@
+body{
+  background-color: lightblue;
+}
+
+.first{
+  background-color: lightblue;
+  /* justify-content: center; */
+  width: 50%;
+  margin-left: 26%;
+  margin-top: 10%;
+  box-shadow: 0px 5px 15px 2px lightslategray;
+}
+
+.header{
+  width: 94.5%;
+  background-color: darkcyan;
+  padding: 1px 20px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+input{
+  width: 60%;
+  padding: 12px 20px;
+  margin: 20px 0px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+button{
+  width: 20%;
+  background-color: lightseagreen;
+  color: white;
+  font-weight: bolder;
+  padding: 10px 10px;
+  margin: 20px 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.inputvalue{
+  background-color: antiquewhite;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.answer{
+  justify-content: center;
+  text-align: center;
+  padding: 50px 0px;
+  margin-bottom: 20px;
+
+}
+
+.marks{
+  width: 50%;
+  margin-left: 26%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  box-shadow: 0px 5px 15px 2px lightslategray;
+}
+
+label{
+  padding: 0px 5px;
+  color: rgb(115, 75, 23);
+  font-weight: bold;
+}
+
+.resultPart{
+  padding: 10px 50px;
+  background-color: antiquewhite;
+}

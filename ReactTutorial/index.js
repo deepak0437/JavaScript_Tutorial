@@ -61,3 +61,8 @@
 // rfce for functional component
 // rce for class component
 // rconst for creating constructor
+
+
+// Four Life Cycle Methods
+// Mounting, Updating, Unmounting, Error Handling
+

@@ -18,6 +18,13 @@ import ParentComponent from './components/ParentComponent';
 import GreetingUserClass from './components/GreetingUser';
 import NameList2 from './components/ListRendering';
 import ChildListRendering from './components/ChildListRender';
+import StyleSheet from './components/StyleSheet';
+import InLineCssStyl from './components/InLineStyl';
+import './components/AppStyles.css';
+import styles from './components/AppStyles.module.css';
+import FormHandlingClass from './components/FormHandling';
+import LifeCycleMethod1 from './components/LifeCycle1';
+import LifeCycleMethod2 from './components/LifeCycle2';
 
 
 // class App extends Component{
@@ -28,6 +35,8 @@ import ChildListRendering from './components/ChildListRender';
 function App() {
   return (
     <div className="App">
+    {/* <h1 className='error'>Error Message</h1>
+    <h1 className={styles.success}>Success Message</h1> */}
       {/* <FunctionalComponent></FunctionalComponent>
       <ClassBaseComponent></ClassBaseComponent>
       <JSXTutorial></JSXTutorial>
@@ -67,8 +76,14 @@ function App() {
       {/* <ParentComponent></ParentComponent> */}
       {/* <GreetingUserClass></GreetingUserClass> */}
 
-      <NameList2></NameList2>
+      {/* <NameList2></NameList2> */}
       {/* <ChildListRendering></ChildListRendering> */}
+      {/* <StyleSheet primary = {true}></StyleSheet> */}
+      {/* <InLineCssStyl></InLineCssStyl> */}
+      <FormHandlingClass></FormHandlingClass>
+
+      <LifeCycleMethod1></LifeCycleMethod1>
+      {/* <LifeCycleMethod2></LifeCycleMethod2> */}
 
     </div>
   );
