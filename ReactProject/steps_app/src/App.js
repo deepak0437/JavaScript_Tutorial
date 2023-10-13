@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import CounterApp from './Counter'
 import FlashCardApp from './FlashCard'
+import StateExercise1 from './StateEx1'
+import StateExercise2 from './StateEx2'
 
 const messages = [
   "Learn React ⚛️",
@@ -26,6 +28,7 @@ function App() {
     <button className='close' onClick={() => setisOpen((is) => !is)}>&times;</button>
     {
       isOpen ? (
+      <>
     <div className='steps'>
       <div className='numbers'>
         <div className={step >= 1 ? "active" : ""}>1</div>
@@ -40,9 +43,14 @@ function App() {
         <button style={{backgroundColor:"#7950f2", color:"#fff"}} onClick={handleNext}>Next</button>
       </div>
     </div>
+    <div>
+    <StateExercise1></StateExercise1>
+    <br /><br />
+    <StateExercise2></StateExercise2>
+    </div>
+    </>
 
     ) : ( <div>
-      {/* <h2 id='welcome'>Welcome To React Tutorial....</h2> */}
       <CounterApp></CounterApp>
       <br /><br />
       <hr />
