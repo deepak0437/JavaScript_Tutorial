@@ -59,7 +59,7 @@ function App() {
 
   function handleDeleteButton(id,friend){
     if (friend.balance === 0) {
-      setFriends(friends.filter(item => item.id != id));
+      setFriends(friends.filter(item => item.id !== id));
       alert(`Are you sur, want to remove  ${friend.name}`)
     } 
     else {
