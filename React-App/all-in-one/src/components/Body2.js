@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import './StateEx2.css';
+import React,{useState} from 'react'
+import './Body2.css';
 
 const faqs = [
     {
@@ -16,13 +16,44 @@ const faqs = [
       title: "Do you ship to countries outside the EU?",
       text:
         "Excepturi velit laborum, perspiciatis nemo perferendis reiciendis aliquam possimus dolor sed! Dolore laborum ducimus veritatis facere molestias!"
-    }
+    },
+    {
+        title: "How long do I have to return my chair?",
+        text:
+          "Pariatur recusandae dignissimos fuga voluptas unde optio nesciunt commodi beatae, explicabo natus."
+      },
+      {
+        title: "Do you ship to countries outside the EU?",
+        text:
+          "Excepturi velit laborum, perspiciatis nemo perferendis reiciendis aliquam possimus dolor sed! Dolore laborum ducimus veritatis facere molestias!"
+      }
   ];
 
-function StateExercise2() {
+function Body2() {
   return (
     <div>
-      <Accordion data={faqs} />
+    <section className='body2-style'>
+      <div>
+        <div className='row'>
+            <div className="col-lg-5 first-row">
+            <div className="img">
+                <img src="https://www.avanse.com/viewPagesAssets/img/estimate-of-your-education-loan.webp" alt="hero image" />
+            </div>
+            </div> 
+            <div className="col-lg-1"></div>
+            <div className="col-lg-6 second-row">
+            <br />
+            <div className='inrow2'>
+            <p className='learning'>LEARN ANYTHING</p>
+            <h1 className='benifits'>Benefits About Online Learning Expertise</h1> 
+            </div>
+            <Accordion data={faqs} />
+            </div>
+
+            
+        </div>
+      </div>
+      </section>
     </div>
   )
 }
@@ -49,11 +80,12 @@ function AccordionItem({ curOpen, onOpen, num, title, text }){
         <div className={`item ${isOpen ? "open" : ""}`} onClick={handleToggle}>
             <p className="number">{num < 9 ? `0${num + 1}` : num + 1}</p>
             <p className="title">{title}</p>
-            <p className="icon">{isOpen ? "-" : "+"}</p>
+            <p className="icon">{isOpen ? <i class='far fas fa-chevron-up'></i> : <i class='far fas fa-chevron-down'></i>}</p>
 
             {isOpen && <div className="content-box">{text}</div>}
         </div>
     )
 }
 
-export default StateExercise2
+
+export default Body2

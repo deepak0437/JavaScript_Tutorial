@@ -54,13 +54,13 @@ function FlashCard(){
     function handleClick(id){
         setSelectedId(id !== selectedId ? id : null) 
     }
-
+// onMouseEnter
     return (
       <>
         <h2 className='nameflash'>Flash Card ....</h2>
         <div className='flashcards'>
         {questions.map(question => 
-            <div key={question.id} className={question.id === selectedId ? "selected" : ""} onMouseEnter={() => handleClick(question.id)}>
+            <div key={question.id} className={question.id === selectedId ? "selected" : ""} onClick={() => handleClick(question.id)}>
                 <p>{question.id === selectedId ? question.answer : question.question}</p>
             </div>
         )}

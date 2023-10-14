@@ -30,7 +30,7 @@ function App() {
   const [friends, setFriends] = useState(initialFriends)
   const [showAddFriend, setshowAddFriend] = useState(false)
   const [selectedFriend, setSelectedFriend] = useState(null)
-
+  console.log("friends ", friends);
   function handleShowAddFriend(){
     setshowAddFriend((show) => !show);
     setSelectedFriend(null)
@@ -135,7 +135,7 @@ function FormAddFriend({ onAddFriend }){
 
     if (!name || !image) return;
     
-    const id = crypto.randomUUID;
+    const id = crypto.randomUUID();
 
     const newFriend = {
       name, id, balance, image: `${image}?u=${id}`
