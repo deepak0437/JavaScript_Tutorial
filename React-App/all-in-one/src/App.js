@@ -1,21 +1,33 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Body1 from './components/Body1';
-import Body2 from './components/Body2';
-import Body3 from './components/Body3';
-import Bod4Card from './components/Bod4Card';
-import TeamBody from './components/TeamBody';
+import Home from './components/Home';
+import AboutUs from './components/AboutUs';
+import PortFolio from './components/PortFolio';
+
 
 function App() {
+  const [reference, setReference] = useState('home')
+  
+  function handlereference(value){
+      setReference(value)
+  }
+  const ShowPage = (reference) => {
+    switch(reference) {
+      case 'home':
+        return <Home></Home>;
+        case 'about':
+          return <AboutUs/>;
+          case 'port':
+            return <PortFolio/>;
+
+    }
+  }
+
   return (
     <div className="">
-    <Header></Header>
-    <Body1></Body1>
-    <Body2></Body2>
-    <Body3></Body3>
-    <Bod4Card></Bod4Card>
-    <TeamBody></TeamBody>
+    <Header onhandlereference={handlereference} reference={reference}></Header>
+    {ShowPage(reference)}
     <Footer></Footer>
     </div>
   );

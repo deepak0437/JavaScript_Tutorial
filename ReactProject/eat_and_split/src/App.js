@@ -60,7 +60,7 @@ function App() {
   function handleDeleteButton(id,friend){
     if (friend.balance === 0) {
       setFriends(friends.filter(item => item.id !== id));
-      alert(`Are you sur, want to remove  ${friend.name}`)
+      alert(`Are you sure, want to remove  ${friend.name}`)
     } 
     else {
       // setFriends(friends)
@@ -148,6 +148,7 @@ function FormAddFriend({ onAddFriend }){
   }
 
   return(
+    <div>
     <form className="form-add-friend" onSubmit={handleSubmit}>
       <label>👫Friend Name</label>
       <input type="text" value={name} onChange={(event) => setName(event.target.value)} />
@@ -160,6 +161,7 @@ function FormAddFriend({ onAddFriend }){
 {/* min='-500000' max='500000' */}
       <Button>Add</Button>
     </form>
+    </div>
   )
 }
 
