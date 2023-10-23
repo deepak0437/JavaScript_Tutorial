@@ -27,7 +27,7 @@ function Activity(){
                 <br />
 
                 <div className='clickonshow'>
-                    <img src="https://i.pravatar.cc/48?u=118836" alt="" />
+                    <img src="https://i.pravatar.cc/48?u=118835" alt="" />
                     <p>Zeson</p>
                     <p>Total Amount : <span className='moneyclick'>$20</span></p>
                 </div>
