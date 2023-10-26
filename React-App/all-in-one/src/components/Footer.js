@@ -17,7 +17,7 @@ function Footer() {
           <a href="#"><i className="fab fa-linkedin-in"></i></a>
           <a href="#"><i className="fab fa-youtube"></i></a>
         </div>
-      </div>
+      </div>  
       <div className="link-boxes">
         <ul className="box">
           <li className="link_name">Company</li>
